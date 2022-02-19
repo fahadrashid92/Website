@@ -26,6 +26,141 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    .mySlides2 {display: none}
+    .mySlides3 {display: none}
+    .mySlides4 {display: none}
+    .mySlides5 {display: none}
+    .mySlides6 {display: none}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    .slideshow-container2,.slideshow-container3,.slideshow-container4,.slideshow-container5,.slideshow-container6 {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    /* Next & previous buttons */
+    .prev, .next,.prev2, .next2,.prev3, .next3,.prev4, .next4,.prev5, .next5,.prev6, .next6 {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next,.next2,.next3,.next4,.next5,.next6 {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover,.prev2:hover, .next2:hover,.prev3:hover, .next3:hover,.prev4:hover, .next4:hover,.prev5:hover, .next5:hover,.prev6:hover, .next6:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    .text2,.text3,.text4,.text5,.text6 {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext2,.numbertext3,.numbertext4,.numbertext5,.numbertext6 {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .dot2,.dot3,.dot4,.dot5,.dot6 {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover, .dot2:hover, .dot3:hover, .dot4:hover, .dot5:hover, .dot5:hover  {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text,.prev3, .next3,.text3,.prev2, .next2,.text2,.prev4, .next4,.text4,.prev5, .next5,.text5,.prev6, .next6,.text6 {font-size: 11px}
+    }
+    </style>
 </head>
 
 <body>
@@ -43,7 +178,7 @@
         <ul>
           <li><a class="nav-link active" href="#header">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#services">Projects</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -109,6 +244,410 @@
 
   <!-- ======= Services Section ======= -->
   <section id="services" class="services">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+        <p>Exclusive Plots in Emirald Hills</p>
+      </div>
+
+      <div class="row">
+        <div class="slideshow-container">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 7</div>
+            <img src="./assets/img/plot1.PNG" style="width:100%">
+            <div class="text">Dubai Hills Plots</div>
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">2 / 7</div>
+            <img src="./assets/img/plot2.PNG" style="width:100%">
+            <div class="text">Plot # 65</div>
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">3 / 7</div>
+            <img src="./assets/img/plot4.PNG" style="width:100%">
+            <div class="text">Plot # 66</div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 7</div>
+            <img src="./assets/img/plot5.PNG" style="width:100%">
+            <div class="text">Plot # 67</div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 7</div>
+            <img src="./assets/img/plot6.jpeg" style="width:100%">
+            <div class="text">Plot # 68</div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 7</div>
+            <img src="./assets/img/plot7.PNG" style="width:100%">
+            <div class="text">Plot # 70</div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">7 / 7</div>
+            <img src="./assets/img/plot3.PNG" style="width:100%">
+            <div class="text">Payment Plan</div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>  
+          </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+        <p>Exclusive Plots in JUMEIRAH BAY ISLAND</p>
+      </div>
+
+      <div class="row">
+        <div class="slideshow-container2">
+
+          <div class="mySlides2">
+            <div class="numbertext2">1 / 4</div>
+            <img src="./assets/img/jumeirahbayPlot1.PNG" style="width:100%">
+            <div class="text2">JUMEIRAH BAY ISLAND Plot</div>
+          </div>
+          
+          <div class="mySlides2">
+            <div class="numbertext2">2 / 4</div>
+            <img src="./assets/img/jumeirahbayPlot2.PNG" style="width:100%">
+            <div class="text2">Plot View</div>
+          </div>
+          
+          <div class="mySlides2">
+            <div class="numbertext2">3 / 4</div>
+            <img src="./assets/img/jumeirahbayPlot3.PNG" style="width:100%">
+            <div class="text2">Plot View</div>
+          </div>
+
+          <div class="mySlides2">
+            <div class="numbertext2">4 / 4</div>
+            <img src="./assets/img/jumeirahbayPlot4.PNG" style="width:100%">
+            <div class="text2">Plot View</div>
+          </div>
+          
+          <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+          <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot2" onclick="currentSlide2(1)"></span> 
+            <span class="dot2" onclick="currentSlide2(2)"></span> 
+            <span class="dot2" onclick="currentSlide2(3)"></span> 
+            <span class="dot2" onclick="currentSlide2(4)"></span> 
+          </div>
+
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+        <p>Six Senses Residences, The Palm, Dubai</p>
+      </div>
+
+      <div class="row">
+        <div class="slideshow-container3">
+
+          <div class="mySlides3">
+            <div class="numbertext3">1 / 13</div>
+            <img src="./assets/img/sixsensespalm1.PNG" style="width:100%">
+            <div class="text3">Six Senses Residences</div>
+          </div>
+          
+          <div class="mySlides3">
+            <div class="numbertext3">2 / 13</div>
+            <img src="./assets/img/sixsensespalm9.jfif" style="width:100%">
+            <div class="text3">View</div>
+          </div>
+          
+          <div class="mySlides3">
+            <div class="numbertext3">3 / 13</div>
+            <img src="./assets/img/sixsensespalm10.jfif" style="width:100%">
+            <div class="text3">View</div>
+          </div>
+
+          <div class="mySlides3">
+            <div class="numbertext3">4 / 13</div>
+            <img src="./assets/img/sixsensespalm11.jfif" style="width:100%">
+            <div class="text3">View</div>
+          </div>
+          
+          <div class="mySlides3">
+            <div class="numbertext3">5 / 13</div>
+            <img src="./assets/img/sixsensespalm12.jfif" style="width:100%">
+            <div class="text3">View</div>
+          </div>
+          
+          <div class="mySlides3">
+            <div class="numbertext3">6 / 13</div>
+            <img src="./assets/img/sixsensespalm13.jfif" style="width:100%">
+            <div class="text3">View</div>
+          </div>
+
+          <div class="mySlides3">
+            <div class="numbertext3">7 / 13</div>
+            <img src="./assets/img/sixsensespalm2.PNG" style="width:100%">
+            <div class="text3">Layout</div>
+          </div>
+          
+          <div class="mySlides3">
+            <div class="numbertext3">8 / 13</div>
+            <img src="./assets/img/sixsensespalm3.PNG" style="width:100%">
+            <div class="text3">Layout</div>
+          </div>
+
+          <div class="mySlides3">
+            <div class="numbertext3">9 / 13</div>
+            <img src="./assets/img/sixsensespalm4.PNG" style="width:100%">
+            <div class="text3">Layout</div>
+          </div>
+          
+          <div class="mySlides3">
+            <div class="numbertext3">10 / 13</div>
+            <img src="./assets/img/sixsensespalm5.PNG" style="width:100%">
+            <div class="text3">Amenities</div>
+          </div>
+          
+          <div class="mySlides3">
+            <div class="numbertext3">11 / 13</div>
+            <img src="./assets/img/sixsensespalm6.PNG" style="width:100%">
+            <div class="text3">Amenities</div>
+          </div>
+          
+          <div class="mySlides3">
+            <div class="numbertext3">12 / 13</div>
+            <img src="./assets/img/sixsensespalm7.PNG" style="width:100%">
+            <div class="text3">Amenities</div>
+          </div>
+
+          <div class="mySlides3">
+            <div class="numbertext3">13 / 13</div>
+            <img src="./assets/img/sixsensespalm8.PNG" style="width:100%">
+            <div class="text3">Amenities</div>
+          </div>
+
+          <a class="prev3" onclick="plusSlides3(-1)">&#10094;</a>
+          <a class="next3" onclick="plusSlides3(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot3" onclick="currentSlide3(1)"></span> 
+            <span class="dot3" onclick="currentSlide3(2)"></span> 
+            <span class="dot3" onclick="currentSlide3(3)"></span> 
+            <span class="dot3" onclick="currentSlide3(4)"></span> 
+            <span class="dot3" onclick="currentSlide3(5)"></span> 
+            <span class="dot3" onclick="currentSlide3(6)"></span> 
+            <span class="dot3" onclick="currentSlide3(7)"></span> 
+            <span class="dot3" onclick="currentSlide3(8)"></span> 
+            <span class="dot3" onclick="currentSlide3(9)"></span> 
+            <span class="dot3" onclick="currentSlide3(10)"></span> 
+            <span class="dot3" onclick="currentSlide3(11)"></span> 
+            <span class="dot3" onclick="currentSlide3(12)"></span> 
+            <span class="dot3" onclick="currentSlide3(13)"></span> 
+          </div>
+
+      </div>
+
+    </div>
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+        <p>Alaya Beach, Majid Al Futtaim</p>
+      </div>
+
+      <div class="row">
+        <div class="slideshow-container4">
+
+          <div class="mySlides4">
+            <div class="numbertext4">1 / 6</div>
+            <img src="./assets/img/alaya1.PNG" style="width:100%">
+            <div class="text4">Alaya Beach</div>
+          </div>
+          <div class="mySlides4">
+            <div class="numbertext4">2 / 6</div>
+            <img src="./assets/img/alaya2.PNG" style="width:100%">
+            <div class="text4">Alaya Beach</div>
+          </div>
+          <div class="mySlides4">
+            <div class="numbertext4">3 / 6</div>
+            <img src="./assets/img/alaya3.PNG" style="width:100%">
+            <div class="text4">Alaya Beach</div>
+          </div>
+          <div class="mySlides4">
+            <div class="numbertext4">4 / 6</div>
+            <img src="./assets/img/alaya4.PNG" style="width:100%">
+            <div class="text4">Alaya Beach</div>
+          </div>
+          <div class="mySlides4">
+            <div class="numbertext4">5 / 6</div>
+            <img src="./assets/img/alaya5.PNG" style="width:100%">
+            <div class="text4">Alaya Beach</div>
+          </div>
+          <div class="mySlides4">
+            <div class="numbertext4">6 / 6</div>
+            <img src="./assets/img/alaya6.PNG" style="width:100%">
+            <div class="text4">Alaya Beach</div>
+          </div>
+
+          <a class="prev4" onclick="plusSlides4(-1)">&#10094;</a>
+          <a class="next4" onclick="plusSlides4(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot4" onclick="currentSlide4(1)"></span> 
+            <span class="dot4" onclick="currentSlide4(2)"></span> 
+            <span class="dot4" onclick="currentSlide4(3)"></span> 
+            <span class="dot4" onclick="currentSlide4(4)"></span> 
+            <span class="dot4" onclick="currentSlide4(5)"></span> 
+            <span class="dot4" onclick="currentSlide4(6)"></span> 
+          </div>
+
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+        <p>St.Regis, Emaar</p>
+      </div>
+
+      <div class="row">
+        <div class="slideshow-container5">
+
+          <div class="mySlides5">
+            <div class="numbertext5">1 / 6</div>
+            <img src="./assets/img/stregis1.PNG" style="width:100%">
+            <div class="text5">St.Regis, Emaar</div>
+          </div>
+          <div class="mySlides5">
+            <div class="numbertext5">2 / 6</div>
+            <img src="./assets/img/stregis2.jpeg" style="width:100%">
+            <div class="text5">St.Regis, Emaar</div>
+          </div>
+          <div class="mySlides5">
+            <div class="numbertext5">3 / 6</div>
+            <img src="./assets/img/stregis3.jpeg" style="width:100%">
+            <div class="text5">St.Regis, Emaar</div>
+          </div>
+          <div class="mySlides5">
+            <div class="numbertext5">4 / 6</div>
+            <img src="./assets/img/stregis4.jpeg" style="width:100%">
+            <div class="text5">St.Regis, Emaar</div>
+          </div>
+          <div class="mySlides5">
+            <div class="numbertext5">5 / 6</div>
+            <img src="./assets/img/stregis5.jpeg" style="width:100%">
+            <div class="text5">St.Regis, Emaar</div>
+          </div>
+          <div class="mySlides5">
+            <div class="numbertext5">6 / 6</div>
+            <img src="./assets/img/stregis6.jpeg" style="width:100%">
+            <div class="text5">St.Regis, Emaar</div>
+          </div>
+          <a class="prev5" onclick="plusSlides5(-1)">&#10094;</a>
+          <a class="next5" onclick="plusSlides5(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot5" onclick="currentSlide5(1)"></span> 
+            <span class="dot5" onclick="currentSlide5(2)"></span> 
+            <span class="dot5" onclick="currentSlide5(3)"></span> 
+            <span class="dot5" onclick="currentSlide5(4)"></span> 
+            <span class="dot5" onclick="currentSlide5(5)"></span> 
+            <span class="dot5" onclick="currentSlide5(6)"></span> 
+          </div>
+
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+        <p>Palm Hills by Emaar in Dubai Hills</p>
+      </div>
+
+      <div class="row">
+        <div class="slideshow-container6">
+
+          <div class="mySlides6">
+            <div class="numbertext6">1 / 4</div>
+            <img src="./assets/img/palmhills1.PNG" style="width:100%">
+            <div class="text6">Palm Hills</div>
+          </div>
+          <div class="mySlides6">
+            <div class="numbertext6">2 / 4</div>
+            <img src="./assets/img/palmhills2.PNG" style="width:100%">
+            <div class="text6">Palm Hills</div>
+          </div>
+          <div class="mySlides6">
+            <div class="numbertext6">3 / 4</div>
+            <img src="./assets/img/palmhills3.PNG" style="width:100%">
+            <div class="text6">Palm Hills</div>
+          </div>
+          <div class="mySlides6">
+            <div class="numbertext6">4 / 4</div>
+            <img src="./assets/img/palmhills4.PNG" style="width:100%">
+            <div class="text6">Palm Hills</div>
+          </div>
+          <a class="prev6" onclick="plusSlides6(-1)">&#10094;</a>
+          <a class="next6" onclick="plusSlides6(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot6" onclick="currentSlide6(1)"></span> 
+            <span class="dot6" onclick="currentSlide6(2)"></span> 
+            <span class="dot6" onclick="currentSlide6(3)"></span> 
+            <span class="dot6" onclick="currentSlide6(4)"></span> 
+          </div>
+
+      </div>
+
+    </div>
+
     <div class="container">
 
       <div class="section-title">
@@ -120,7 +659,7 @@
         <div class="col-md-6 align-items-stretch">
           <div class="icon-box">
             <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">Ready Sales</a></h4>
+            <h4><a href="">Villas,Land / Plots</a></h4>
             <p>Secondary Market of Villas, Townhouses and Apartments.</p>
           </div>
         </div>
@@ -180,33 +719,176 @@
         </div>
       </div>
 
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
+      
 
     </div>
   </section><!-- End Contact Section -->
 
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
 
+    var slideIndex2 = 1;
+    showSlides2(slideIndex2);
+    
+    function plusSlides2(n) {
+      showSlides2(slideIndex2 += n);
+    }
+    
+    function currentSlide2(n) {
+      showSlides2(slideIndex2 = n);
+    }
+    
+    function showSlides2(n) {
+      var i;
+      var slides2 = document.getElementsByClassName("mySlides2");
+      var dots2 = document.getElementsByClassName("dot2");
+      if (n > slides2.length) {slideIndex2 = 1}    
+      if (n < 1) {slideIndex2 = slides2.length}
+      for (i = 0; i < slides2.length; i++) {
+          slides2[i].style.display = "none";  
+      }
+      for (i = 0; i < dots2.length; i++) {
+          dots2[i].className = dots2[i].className.replace(" active", "");
+      }
+      slides2[slideIndex2-1].style.display = "block";  
+      dots2[slideIndex2-1].className += " active";
+    }
+
+    var slideIndex3 = 1;
+    showSlides3(slideIndex3);
+    
+    function plusSlides3(n) {
+      showSlides3(slideIndex3 += n);
+    }
+    
+    function currentSlide3(n) {
+      showSlides3(slideIndex3 = n);
+    }
+    
+    function showSlides3(n) {
+      var i;
+      var slides3 = document.getElementsByClassName("mySlides3");
+      var dots3 = document.getElementsByClassName("dot3");
+      if (n > slides3.length) {slideIndex3 = 1}    
+      if (n < 1) {slideIndex3 = slides3.length}
+      for (i = 0; i < slides3.length; i++) {
+          slides3[i].style.display = "none";  
+      }
+      for (i = 0; i < dots3.length; i++) {
+          dots3[i].className = dots3[i].className.replace(" active", "");
+      }
+      slides3[slideIndex3-1].style.display = "block";  
+      dots3[slideIndex3-1].className += " active";
+    }
+
+    var slideIndex4 = 1;
+    showSlides4(slideIndex4);
+    
+    function plusSlides4(n) {
+      showSlides4(slideIndex4 += n);
+    }
+    
+    function currentSlide4(n) {
+      showSlides4(slideIndex4 = n);
+    }
+    
+    function showSlides4(n) {
+      var i;
+      var slides4 = document.getElementsByClassName("mySlides4");
+      var dots4 = document.getElementsByClassName("dot4");
+      if (n > slides4.length) {slideIndex4 = 1}    
+      if (n < 1) {slideIndex4 = slides4.length}
+      for (i = 0; i < slides4.length; i++) {
+          slides4[i].style.display = "none";  
+      }
+      for (i = 0; i < dots4.length; i++) {
+          dots4[i].className = dots4[i].className.replace(" active", "");
+      }
+      slides4[slideIndex4-1].style.display = "block";  
+      dots4[slideIndex4-1].className += " active";
+    }
+
+    var slideIndex5 = 1;
+    showSlides5(slideIndex5);
+    
+    function plusSlides5(n) {
+      showSlides5(slideIndex5 += n);
+    }
+    
+    function currentSlide5(n) {
+      showSlides5(slideIndex5 = n);
+    }
+    
+    function showSlides5(n) {
+      var i;
+      var slides5 = document.getElementsByClassName("mySlides5");
+      var dots5 = document.getElementsByClassName("dot5");
+      if (n > slides5.length) {slideIndex5 = 1}    
+      if (n < 1) {slideIndex5 = slides5.length}
+      for (i = 0; i < slides5.length; i++) {
+          slides5[i].style.display = "none";  
+      }
+      for (i = 0; i < dots5.length; i++) {
+          dots5[i].className = dots5[i].className.replace(" active", "");
+      }
+      slides5[slideIndex5-1].style.display = "block";  
+      dots5[slideIndex5-1].className += " active";
+    }
+
+    var slideIndex6 = 1;
+    showSlides6(slideIndex6);
+    
+    function plusSlides6(n) {
+      showSlides6(slideIndex6 += n);
+    }
+    
+    function currentSlide6(n) {
+      showSlides6(slideIndex6 = n);
+    }
+    
+    function showSlides6(n) {
+      var i;
+      var slides6 = document.getElementsByClassName("mySlides6");
+      var dots6 = document.getElementsByClassName("dot6");
+      if (n > slides6.length) {slideIndex6 = 1}    
+      if (n < 1) {slideIndex6 = slides6.length}
+      for (i = 0; i < slides6.length; i++) {
+          slides6[i].style.display = "none";  
+      }
+      for (i = 0; i < dots6.length; i++) {
+          dots6[i].className = dots6[i].className.replace(" active", "");
+      }
+      slides6[slideIndex6-1].style.display = "block";  
+      dots6[slideIndex6-1].className += " active";
+    }
+
+
+    </script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
